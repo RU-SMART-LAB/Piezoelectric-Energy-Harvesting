@@ -1,9 +1,9 @@
-%%Colby stuff
+
 %% Control Function Generator
 
 clear f;
 
-f = fgen('USB0::0x0957::0x1507::MY48006296::0::INSTR');
+f = fgen('USB0::0x0957::0x1507::MY48006296::0::INSTR'); %%Function Generators Physical Address
 
 f.disableOutput;
 
