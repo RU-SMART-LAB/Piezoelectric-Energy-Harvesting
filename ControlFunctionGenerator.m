@@ -1,3 +1,4 @@
+%%Colby stuff
 %% Control Function Generator
 
 clear f;
@@ -9,7 +10,7 @@ f.disableOutput;
 f.Waveform = "Sine";
 f.Amplitude = 0.1;
 
-%% Frequency Sweep 
+%% Frequency Sweep
 
 f.Amplitude = 0.04;  % 40mV peak-to-peak
 
@@ -18,7 +19,7 @@ for i = 1:1000       % Sweeps 1 to 100 Hz
     f.Frequency = 0.1*i;
 end
 
-f.disableOutput;  
+f.disableOutput;
 
 %% Amplitude Sweep
 
@@ -37,7 +38,7 @@ for i = 1:1000
     if index-shift<1
         index = 1;
     elseif index-shift>length(AmplitudeProfile)
-        index = length(Amplitudes);    
+        index = length(Amplitudes);
     else
         index = index - shift;
     end
